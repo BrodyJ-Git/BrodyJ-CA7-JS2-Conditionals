@@ -9,7 +9,7 @@
         <title>Bear Ninja Hunter</title>
     </head>
     <body> 
-        <script> <!-- Prompts the user and greets them -->
+        <script> <!-- Prompts the user and greets them -->          
             const playerName = prompt('Welcome to Bear Hunter Ninja! Please enter your name to get started: ');
             alert(`Hi ${playerName} Let\'s Play!!`);
         </script>
@@ -22,9 +22,9 @@
 
             let playerChoiceString = prompt('Who are you: Bear, Ninja, or Hunter?');
             const computerChoice = 1; // temp
-            let playerChoice = 1;
 
             // determines player choice as an int (toLowerCase() could be used)
+            let playerChoice;
             switch (playerChoiceString) 
             {
                 case "Bear":
@@ -42,7 +42,7 @@
 
 
             // determines win message
-            let playerWin = "";
+            let playerWin;
             if (playerChoice == computerChoice)
             {
                 playerWin = "You Tied!!";
